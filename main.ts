@@ -7,13 +7,12 @@ if (!MONGO_URL) {
   throw new Error("Please provide a MONGO_URL");
 }
 
-
 const mongoClient = new MongoClient(MONGO_URL);
 await mongoClient.connect();
 console.info("Connected to MongoDB");
 
 const mongoDB = mongoClient.db("MainDB");
-const HolaCollection = mongoDB.collection("hola");
+const HolaCollection = mongoDB.collection("holas");
 
 /*
 const server = new ApolloServer({
