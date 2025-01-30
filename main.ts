@@ -12,7 +12,7 @@ await mongoClient.connect();
 console.info("Connected to MongoDB");
 
 const mongoDB = mongoClient.db("MainDB");
-const HolaCollection = mongoDB.collection("holas");
+const HolaCollection = mongoDB.collection("holasss");
 
 /*
 const server = new ApolloServer({
